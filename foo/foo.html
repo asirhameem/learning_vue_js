@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foo</title>
+</head>
+
+<body>
+    <h1>Welcome to my FOO Website</h1>
+
+
+    <div id="app">
+        <h3 :title="GetAddress()">Address: {{address}} </h3>
+        <h3 :title="phone">Phone: {{phone}} </h3>
+        <h3 :title="university">University: {{university}} </h3>
+        <h3>Updated Phone Number: {{ UpdatePhone("01790748168")}} </h3>
+        <a v-bind:href="twitter">Twitter Profile</a>
+        <a v-bind:href="facebook">Facebook Profile</a>
+
+    </div>
+
+    <script src="vue.js"></script>
+    <script>
+
+        var app = new Vue({
+            
+        });
+    </script>
+
+</body>
+
+
+</html>

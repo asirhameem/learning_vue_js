@@ -16,7 +16,7 @@ let divTwo = new Vue({
     el: '#second',
     data: {
         address: "Rajapukur Lane, Chittagong",
-        phone: "01521400829",
+        phone: "015214008295",
         university: "AIUB",
         facebook: "https://www.facebook.com/asirhameem/",
         twitter: "https://www.twitter.com/asirhameem/"
@@ -29,6 +29,28 @@ let divTwo = new Vue({
         },
         GetAddress() {
             return this.address;
+        }
+    }
+});
+
+let box = new Vue({
+
+    el: '#box',
+    data: {
+        position: {
+            x: 0,
+            y: 0
+        }
+    },
+    methods: {
+        MouseOver(event) {
+            this.position.x = event.offsetX;
+            this.position.y = event.offsetY;
+            console.log(event);
+        },
+        Click(event) {
+            this.position.x = event.offsetX;
+            this.position.y = event.offsetY;
         }
     }
 });

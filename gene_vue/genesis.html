@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis</title>
+    <style>
+        .box {
+            height: 240px;
+            width: 240px;
+            margin-top: 20px;
+            background-color: steelblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,10 +27,16 @@
         <h3 :title="GetAddress()">Address: {{address}} </h3>
         <h3 :title="phone">Phone: {{phone}} </h3>
         <h3 :title="university">University: {{university}} </h3>
-        <h3>Updated Phone Number: {{ UpdatePhone("01790748168")}} </h3>
+        <h3>Updated Phone Number: {{ UpdatePhone("017907481689555")}} </h3>
         <a v-bind:href="twitter">Twitter Profile</a>
         <a v-bind:href="facebook">Facebook Profile</a>
 
+    </div>
+
+    <div class="box" id="box" @mouseover="MouseOver">
+        <div>
+            {{ position.x }} {{ position.y }}
+        </div>
     </div>
 
     <script src="vue.js"></script>
