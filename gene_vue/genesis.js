@@ -54,3 +54,47 @@ let box = new Vue({
         }
     }
 });
+
+let form = new Vue({
+    el: '#form',
+    data: {
+        information: {
+            name: ''
+        }
+    },
+    methods: {
+        Write(event) {
+            this.information.name = event.target.value;
+            console.log(this.information.name);
+            console.log(event);
+        }
+    }
+});
+
+let formModel = new Vue({
+    el: '#formModel',
+    data: {
+        information: {
+            name: ''
+        }
+    }
+});
+
+let show = new Vue({
+    el: '#show',
+    data: {
+        information: {
+            name: 0,
+            age: false
+        }
+    },
+    methods: {
+        NameIncrease() {
+            this.information.name++;
+            console.log(this.information.name);
+        },
+        Age() {
+            this.information.age = !this.information.age;
+        }
+    }
+});

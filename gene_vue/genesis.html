@@ -32,12 +32,46 @@
         <a v-bind:href="facebook">Facebook Profile</a>
 
     </div>
-
-    <div class="box" id="box" @mouseover="MouseOver">
+    <h2>Event Binding</h2>
+    <div class="box" id="box" @mouseover.shift="MouseOver">
         <div>
+            <h3>Mouse Event with Modifier Shift</h3>
             {{ position.x }} {{ position.y }}
         </div>
     </div>
+
+    <div class="form" id="form">
+        <hr>
+        <h3>Keyboard Events</h3>
+        <h4>Name from Name field:</h4>{{information.name}}
+        <form action="">
+            <h2>Name</h2>
+            <input type="text" @keyup="Write">
+        </form>
+    </div>
+    <hr>
+    <h2>Model Binding</h2>
+    <div class="form1" id="formModel">
+        <hr>
+        <h3>Model Binding</h3>
+        <h4>Name from Name field:</h4>{{information.name}}
+        <form action="">
+            <h2>Name</h2>
+            <input type="text" v-model="information.name">
+        </form>
+    </div>
+    <hr>
+
+    <h2>Vue Conditions and Loops</h2>
+    <div class="show" id="show">
+        <hr>
+        <button @click="NameIncrease">Name</button>
+        <button @click="Age">Age</button>
+        <h4 v-if="information.name == 4"> Name: {{information.name}}</h4>
+        <h4 v-else-if="information.age">Age: {{ information.age }} </h4>
+    </div>
+
+    <hr>
 
     <script src="vue.js"></script>
     <script src="genesis.js"></script>
