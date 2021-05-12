@@ -98,3 +98,30 @@ let show = new Vue({
         }
     }
 });
+
+
+let loop = new Vue({
+    el: '#loop',
+    data: {
+        information: {
+            name: ['biriyani', 'rezala', 'korma', 'pizza', 'burger', 'sandwich'],
+            pizza: [
+                { name: 'supreme', size: 12, price: 300 },
+                { name: 'tropical', size: 12, price: 300 },
+                { name: 'beef', size: 12, price: 300 },
+                { name: 'mutton', size: 12, price: 300 }
+
+            ]
+
+        }
+    },
+    methods: {
+        NameIncrease() {
+            this.information.name++;
+            console.log(this.information.name);
+        },
+        Age() {
+            this.information.age = !this.information.age;
+        }
+    }
+});

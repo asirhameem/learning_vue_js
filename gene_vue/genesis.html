@@ -72,6 +72,21 @@
     </div>
 
     <hr>
+    <h4>For loop</h4>
+    <div class="loop" id="loop">
+        <ul>
+            <li v-for="food in information.name"> {{ food }} </li>
+        </ul>
+
+        <!-- <ol>
+            <li v-for="pizza in infromation.pizza"> {{ pizza.name }} || {{ pizza.size }} || {{ pizza.price }} </li>
+        </ol> -->
+        <ol>
+            <li v-for="piz in information.pizza"> {{piz.name}}, {{piz.size}}, {{piz.price}} </li>
+        </ol>
+    </div>
+
+    <hr>
 
     <script src="vue.js"></script>
     <script src="genesis.js"></script>
