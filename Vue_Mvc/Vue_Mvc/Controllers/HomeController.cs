@@ -39,9 +39,14 @@ namespace Vue_Mvc.Controllers
                 return View();
             }else if (userInfo.Email == user.Email && userInfo.Password == user.Password)
             {
-                return Ok();
+                
+                return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+                return View();
+            }
+            
         }
 
         public IActionResult Privacy()

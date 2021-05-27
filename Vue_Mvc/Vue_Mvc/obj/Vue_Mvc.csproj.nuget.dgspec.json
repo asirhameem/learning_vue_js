@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ASP.Net Core\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj": {}
+    "F:\\Web Technologies\\Vue Js\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj": {}
   },
   "projects": {
-    "F:\\ASP.Net Core\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj": {
+    "F:\\Web Technologies\\Vue Js\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ASP.Net Core\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj",
+        "projectUniqueName": "F:\\Web Technologies\\Vue Js\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj",
         "projectName": "Vue_Mvc",
-        "projectPath": "F:\\ASP.Net Core\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj",
+        "projectPath": "F:\\Web Technologies\\Vue Js\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "F:\\ASP.Net Core\\Vue_Mvc\\Vue_Mvc\\obj\\",
+        "outputPath": "F:\\Web Technologies\\Vue Js\\Vue_Mvc\\Vue_Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

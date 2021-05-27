@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HasUso14BbSKagGG4NExEDZpkqW646qIyqvbyxKW9Z+fwRlKE47A0k/+1wxaNI9cKV0JgMhyHdxu21g8jIx0bQ==",
+  "dgSpecHash": "5HMuFHMWwiBzHcppej5bIaeDXYlSgoPax1f4seI4dK5no5tgnMV66BfC8JxoL9t0aTy3ButbC5S2/tYCnrgTCQ==",
   "success": true,
-  "projectFilePath": "F:\\ASP.Net Core\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj",
+  "projectFilePath": "F:\\Web Technologies\\Vue Js\\Vue_Mvc\\Vue_Mvc\\Vue_Mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

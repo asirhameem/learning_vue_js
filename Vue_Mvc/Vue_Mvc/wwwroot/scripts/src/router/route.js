@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import UserList from '../pages/UserList.vue'
-import AddUser from '../pages/AddUser.vue'
+
 import EditUser from '../pages/EditUser.vue'
 import About from '../pages/About.vue'
-import AboutMe from '../pages/AboutMe.vue'
 import Contact from '../pages/Contact.vue'
+import Welcome from '../pages/Welcome.vue'
 
 
 Vue.use(Router)
@@ -14,14 +13,11 @@ export default new Router({
     routes: [
         {
             path: '/',
-            name: 'UserList',
-            component: UserList
+            name: 'Welcome',
+            component: Welcome
+
         },
-        {
-            path: '/add-user',
-            name: 'AddUser',
-            component: AddUser
-        },
+       
         {
             path: '/edit-user/:id',
             name: 'EditUser',
@@ -32,17 +28,14 @@ export default new Router({
             name: 'About',
             component: About,
             children:[
-            {
-                path: '/about/aboutme',
-                name: 'AboutMe',
-                component: AboutMe,
-            },
+            
             {
                 path: '/about/contact',
                 name: 'Contact',
                 component: Contact,
-            },
+            }
         ]
-        },
+        }
+        
     ]
 })
