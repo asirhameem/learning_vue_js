@@ -4,7 +4,8 @@ const path = require('path')
 module.exports = {
     mode: 'development',
     entry: [
-        './src/app.js'
+        './src/app.js',
+        './src/admin.js'
     ],
     module: {
         rules: [{
@@ -13,6 +14,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin() 
     ]
 }

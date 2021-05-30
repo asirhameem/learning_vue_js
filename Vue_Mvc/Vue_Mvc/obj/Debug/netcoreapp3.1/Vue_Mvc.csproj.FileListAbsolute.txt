@@ -156,3 +156,4 @@ F:\Web Technologies\Vue Js\Vue_Mvc\Vue_Mvc\obj\Debug\netcoreapp3.1\staticwebasse
 F:\Web Technologies\Vue Js\Vue_Mvc\Vue_Mvc\obj\Debug\netcoreapp3.1\Vue_Mvc.dll
 F:\Web Technologies\Vue Js\Vue_Mvc\Vue_Mvc\obj\Debug\netcoreapp3.1\Vue_Mvc.pdb
 F:\Web Technologies\Vue Js\Vue_Mvc\Vue_Mvc\obj\Debug\netcoreapp3.1\Vue_Mvc.genruntimeconfig.cache
+F:\Web Technologies\Vue Js\Vue_Mvc\Vue_Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Home\AdminDashboard.cshtml.g.cs

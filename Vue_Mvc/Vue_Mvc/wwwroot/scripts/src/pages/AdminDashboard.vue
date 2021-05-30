@@ -1,8 +1,9 @@
 <template>
   <div>
     <h2>Welcome to Vue To-Do List Application</h2>
-    <ul v-for="task in pendingTasks" :key="task.Id">
-        <li> {{task.taskName}}    --    {{task.taskDeadline}}   --    {{task.taskStatus}} </li>
+    <h3>This is the Admin Dashboard</h3>
+    <ul v-for="task in allTasks" :key="task.Id">
+        <li> {{task.taskName}}  --  {{task.taskDeadline}}   --   {{task.status}} </li>
     </ul>
     
     
@@ -13,20 +14,20 @@
     export default {
         data() {
             return {
-                pendingTasks: []
+                allTasks: []
             }
         },
         mounted() {
-            this.GetTasks();
+            this.GetAllTasks();
         },
         methods: {
-            GetTasks() {
-                fetch("/Pendings", {
+            GetAllTasks() {
+                fetch("/AllTasks", {
                     method: "GET"
                 })
                     .then((response) => response.json())
                     .then((data) => {
-                        this.pendingTasks = data;
+                        this.allTasks = data;
                     })
                     .catch(() =>
                         console.log("Can’t access " + url + " response. Blocked by browser?")
