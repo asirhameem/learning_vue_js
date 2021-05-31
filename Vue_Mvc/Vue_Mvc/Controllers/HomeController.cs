@@ -94,9 +94,11 @@ namespace Vue_Mvc.Controllers
         }
 
         [HttpGet]
-        [Route("Update")]
-        public IActionResult UpdateTask(int id, [FromBody] Models.Task task)
+        [Route("Task/Complete/{id}")]
+        public IActionResult UpdateTask(int id)
         {
+            var task = context.Tasks.Find(id);
+            task.TaskStatus = "Done";
             context.Entry(task).State = EntityState.Modified;
             context.SaveChanges();
 
