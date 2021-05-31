@@ -44,7 +44,7 @@ namespace Vue_Mvc.Controllers
             }else if (userInfo.Email == user.Email && userInfo.Password == user.Password && userInfo.Type == "Regular")
             {
 
-                return RedirectToAction("Index");
+                return View("Index");
             }
             else if(userInfo.Email == user.Email && userInfo.Password == user.Password && userInfo.Type == "Admin")
             {
