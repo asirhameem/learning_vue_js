@@ -2,8 +2,10 @@
   <div>
     <h2>Welcome to Vue To-Do List Application</h2>
     <h3>This is the Admin Dashboard</h3>
+    <h4> Create Task </h4>
+    <router-link to="/create">Create Task</router-link>
     <ul v-for="task in allTasks" :key="task.Id">
-        <li> {{task.taskName}}  --  {{task.taskDeadline}}   --   {{task.status}} </li>
+        <li> {{task.taskName}}  --  {{task.taskDeadline}}   --   {{task.taskStatus}} </li>
     </ul>
     
     

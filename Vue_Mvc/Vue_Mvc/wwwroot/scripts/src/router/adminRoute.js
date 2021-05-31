@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-
+import CreateTask from '../pages/CreateTask.vue'
 import AdminDash from '../pages/AdminDashboard.vue'
 
 
@@ -13,9 +13,13 @@ export default new Router({
             path: '/',
             name: 'AdminDashboard',
             component: AdminDash
-
+        },
+        {
+            path: '/create',
+            name: 'CreateTask',
+            component: CreateTask
         }
        
         
-    ]
+    ] 
 })

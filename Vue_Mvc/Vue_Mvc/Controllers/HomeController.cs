@@ -57,6 +57,7 @@ namespace Vue_Mvc.Controllers
             
         }
         [HttpPost]
+        [Route("Home/Create", Name ="CreateTask")]
         public IActionResult CreateTask([FromBody] Models.Task task)
         {
             context.Tasks.Add(task);
