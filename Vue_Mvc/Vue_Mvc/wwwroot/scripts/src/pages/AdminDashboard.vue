@@ -22,7 +22,7 @@
           </td>
           
           <td>
-              <button style="color: red">Delete Task</button>
+              <button style="color: red" v-on:click="DeleteTask(task.id)">Delete Task</button>
           </td>
       </tr>
  
@@ -73,7 +73,18 @@
                     );
             },
             DeleteTask(id) {
-
+                fetch("Task/Delete/" + id, {
+                    method: "DELETE"
+                })
+                    .then((response) => {
+                        console.log(response);
+                        if (response.status == 200) {
+                            this.GetAllTasks();
+                        }
+                    })
+                    .catch(() =>
+                        console.log("Can’t access " + url + " response. Blocked by browser?")
+                    );
             }
         }
     }

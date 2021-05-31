@@ -105,7 +105,16 @@ namespace Vue_Mvc.Controllers
             return Ok();
         }
 
+        [HttpDelete]
+        [Route("Task/Delete/{id}")]
+        public IActionResult DeleteTask(int id)
+        {
+            var task = context.Tasks.Find(id);
+            context.Tasks.Remove(task);
+            context.SaveChanges();
 
+            return Ok();
+        }
 
 
 
